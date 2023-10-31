@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pic{
+    overflow: hidden;
+}
+.p1{
+    font-size: 50px;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin-top: -650px;
+    color: white;
+}
+#p2{
+    font-size: 92px;
+    color: #7477B7;
+    text-align: center;
+    margin-top: 20px;
+    
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        
+        <img class="pic" src="images/matthew-wiebe-sTCPfVbAjSc-unsplash.jpg" width="100%" height="800px" alt="">
+        <p class="p1">Pre book your "JAGUAR" from today.</p>
+        <p id="p2">10:00</p>
+    </div>
+
+    <script>
+        const startingMinutes = 10;
+        let time = startingMinutes * 60;
+
+        const timer1= document.getElementById("p2");
+
+        setInterval(timerfunction,1000);
+
+        function timerfunction(){
+            let minutes = Math.floor(time/60);
+            let seconds = time % 60;
+            let total= minutes+":"+seconds;
+            timer1.innerHTML= total;
+
+            time--;
+        }
+    </script>
+
+    
+   
+    
+</body>
+</html>
